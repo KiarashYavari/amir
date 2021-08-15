@@ -22,8 +22,9 @@
 
 import os
 import logging
-from .share import share
+from amir.share import share
 import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 ## \defgroup Utility
@@ -38,7 +39,7 @@ def get_builder(builder_file_name):
         Assumed to be in the 'ui' directory under the data path.
     """
     # Look for the ui file that describes the user interface.
-    #ui_filename = get_data_file('ui', '%s.ui' % (builder_file_name,))
+    # ui_filename = get_data_file('ui', '%s.ui' % (builder_file_name,))
     ui_filename = os.path.join(
         share.config.data_path, 'ui', '%s.glade' % (builder_file_name,))
 

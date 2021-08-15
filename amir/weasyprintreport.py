@@ -1,17 +1,26 @@
+# weasyprintreport:
+# create a table from reports content and print it
+
 from weasyprint import HTML
 import cairocffi
 import os
-import gi
-from gi.repository import GLib, Gtk
 import subprocess
 import sys
 import time
-from .share import share
-# config = share.config
+from amir.share import share
+import gi
+
+gi.require_version('Gtk', '3.0')
+from gi.repository import GLib, Gtk
+
+config = share.config
+
+# add the 'project/amir/amir/data' to sys.path env addresses
 dir_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, dir_path + '/data/')
 
 
+# get the url convert it to document and print it
 class Printo:
     def __init__(self, url, landscape=False):
         self.operation = Gtk.PrintOperation()
@@ -24,7 +33,7 @@ class Printo:
         self.operation.set_use_full_page(False)
         self.operation.set_unit(Gtk.Unit.POINTS)
         self.operation.set_embed_page_setup(True)
-        if landscape == True:
+        if landscape:
             pageSetup = Gtk.PageSetup()
             pageSetup.set_orientation(Gtk.PageOrientation.LANDSCAPE)
             self.operation.set_default_page_setup(pageSetup)
@@ -54,6 +63,7 @@ class Printo:
         page.paint(cairocffi_context, left_x=0, top_y=-40, scale=0.75)
 
 
+# build an html table from data convert it to document preview it and print it
 class WeasyprintReport:
     def __init__(self):
         if share.config.locale == 'en_US':
@@ -62,7 +72,7 @@ class WeasyprintReport:
             self.direction = 'right'
         self.subjectHeaderStyle = 'style="text-align:center;"'
         self.detailHeaderStyle = 'style="text-align:' + \
-            self.direction + '; font-size:9px;"'
+                                 self.direction + '; font-size:9px;"'
 
     def doPrint(self, html, landscape=False):
         Printo(html, landscape).run()
@@ -75,10 +85,11 @@ class WeasyprintReport:
             os.startfile('report.pdf')
         time.sleep(3)
         os.remove('report.pdf')
+        # change col_wid=[] to col_wid in argumans
 
-    def createTable(self, report_header, report_data, col_wid=[]):
+    def createTable(self, report_header, report_data, col_wid):
         hasWidth = True if len(col_wid) else False
-        col_width = [None] * len(report_header)
+        col_width = [] * len(report_header)
         for i in range(0, len(report_header)):
             col_width[i] = 'style="width:' + str(col_wid[i]) + 'pt" ' if hasWidth else ""
         i = 0
@@ -87,7 +98,7 @@ class WeasyprintReport:
             html = '<table>\
                     <thead><tr>'
             for header in report_header:
-                html += '<th '+col_width[i]+'>' + header + '</th>'
+                html += '<th ' + col_width[i] + '>' + header + '</th>'
                 i += 1
             html += '</tr></thead>\
                     <tbody>'
@@ -104,7 +115,7 @@ class WeasyprintReport:
             report_header = report_header[::-1]
             col_width = col_width[::-1]
             for header in report_header:
-                html += '<th '+col_width[i]+'>' + header + '</th>'
+                html += '<th ' + col_width[i] + '>' + header + '</th>'
                 i += 1
             html += '</tr></thead>\
                     <tbody>'
@@ -117,7 +128,7 @@ class WeasyprintReport:
             html += '</tbody></table>'
         html = '<!DOCTYPE html> <html> <head> \
                 <style> @font-face {font-family: Vazir; src: url(data/font/Vazir.woff); } \
-                table {border-collapse: collapse; border-bottom:1px solid black; text-align:'+text_align+'; width:100%; font-size:8pt;}\
+                table {border-collapse: collapse; border-bottom:1px solid black; text-align:' + text_align + '; width:100%; font-size:8pt;}\
                 th {border: 2px solid black;  padding: 7pt;font-size:10pt;}\
                 td {border-left:1px solid; border-right:1px solid; padding: 10pt;} \
                  body {font-family: "Vazir"} \

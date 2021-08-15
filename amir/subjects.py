@@ -1,7 +1,3 @@
-import gi
-gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, Gdk
-from gi.repository import GObject
 from gettext import gettext as _
 
 from sqlalchemy.orm.util import outerjoin
@@ -10,14 +6,21 @@ from sqlalchemy.sql.functions import *
 from sqlalchemy.sql import and_
 from sqlalchemy.orm import sessionmaker, join
 
-from . import numberentry
-from .utility import LN, convertToLatin
-from .database import *
-from .share import share
-from .helpers import get_builder
+from amir import numberentry, amirconfig
+from amir.utility import LN, convertToLatin
+from amir.database import *
+from amir.share import share
+from amir.helpers import get_builder
 from amir.share import Share
+import gi
+
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, Gdk
+from gi.repository import GObject
 
 # config = share.config
+config = amirconfig.AmirConfig()
+share.config = config
 
 
 class Subjects(GObject.GObject):
@@ -75,14 +78,14 @@ class Subjects(GObject.GObject):
         box.add(self.code)
         self.code.show()
 
-        #config.db.session = config.db.session
+        # config.db.session = config.db.session
 
         Subject1 = aliased(Subject, name="s1")
         Subject2 = aliased(Subject, name="s2")
 
         # Find top level ledgers (with parent_id equal to 0)
         query = share.config.db.session.query(Subject1.code, Subject1.name, Subject1.type,
-                                        Subject1.lft, Subject1.rgt, count(Subject2.id), Subject1.permanent)
+                                              Subject1.lft, Subject1.rgt, count(Subject2.id), Subject1.permanent)
         query = query.select_from(
             outerjoin(Subject1, Subject2, Subject1.id == Subject2.parent_id))
         if len(parent_id) == 1:
@@ -103,7 +106,7 @@ class Subjects(GObject.GObject):
                 and_(Subject.lft >= a.lft, Subject.lft <= a.rgt)).first()
             subject_sum = subject_sum[0]
 
-            if subject_sum == None:
+            if subject_sum is None:
                 subject_sum = LN("0")
             else:
                 if subject_sum < 0:
@@ -125,7 +128,7 @@ class Subjects(GObject.GObject):
         self.treestore.set_sort_column_id(0, Gtk.SortType.ASCENDING)
         self.window.show_all()
         self.builder.connect_signals(self)
-        #self.rebuild_nested_set(0, 0)
+        # self.rebuild_nested_set(0, 0)
 
         if multiselect:
             self.treeview.get_selection().set_mode(Gtk.SelectionMode.MULTIPLE)
@@ -146,7 +149,7 @@ class Subjects(GObject.GObject):
         query = share.config.db.session.query(Subject.code).select_from(
             Subject).order_by(Subject.code.desc())
         code = query.filter(Subject.parent_id == 0).first()
-        if code == None:
+        if code is None:
             lastcode = "001"
         else:
             lastcode = "%03d" % (int(code[0][-3:]) + 1)
@@ -187,7 +190,7 @@ class Subjects(GObject.GObject):
             query = query.filter(Subject.code == pcode)
             psub = query.first()
 
-            #parentname = self.treestore.get(parent, 1)[0]
+            # parentname = self.treestore.get(parent, 1)[0]
             label = self.builder.get_object("label3")
             label.set_text(psub.name)
             entry = self.builder.get_object("ledgername")
@@ -252,7 +255,7 @@ class Subjects(GObject.GObject):
                 self.builder.get_object("debtor").set_active(True)
                 self.builder.get_object("creditor").set_active(True)
 
-            #label = self.builder.get_object("label3")
+            # label = self.builder.get_object("label3")
             # label.set_text(name)
             entry = self.builder.get_object("ledgername")
             entry.set_text(name)
@@ -291,7 +294,8 @@ class Subjects(GObject.GObject):
             result = query.filter(Subject1.code == code).first()
 
             if result[1] != 0:
-                msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.CLOSE,
+                msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
+                                           Gtk.ButtonsType.CLOSE,
                                            _("Subject can not be deleted, because it has some child subjects."))
                 msgbox.set_title(_("Error deleting subject"))
                 msgbox.run()
@@ -302,7 +306,8 @@ class Subjects(GObject.GObject):
                 query = query.filter(Notebook.subject_id == result[0])
                 rowcount = query.first()[0]
                 if rowcount != 0:
-                    msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.CLOSE,
+                    msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
+                                               Gtk.ButtonsType.CLOSE,
                                                _("Subject can not be deleted, because there are some documents registered for it."))
                     msgbox.set_title(_("Error deleting subject"))
                     msgbox.run()
@@ -401,7 +406,7 @@ class Subjects(GObject.GObject):
                 msgbox.run()
                 msgbox.destroy()
                 return
-           
+
             if edit == True:
 
                 query = share.config.db.session.query(
@@ -453,13 +458,13 @@ class Subjects(GObject.GObject):
                     tempstore = self.treestore.filter_new(
                         self.treestore.get_path(iter))
                     tempstore.foreach(self.editChildCodes, (basecode, length))
-#                    while chiter:
-#                        chcode = self.treestore.get(chiter, 0)[0]
-#                        chcode = utility.convertToLatin(chcode)[-2:]
-#                        if config.digittype == 1:
-#                            chcode = utility.convertToPersian(chcode)
-#                        self.treestore.set(chiter, 0, basecode + chcode )
-#                        chiter = self.treestore.iter_next(chiter)
+                #                    while chiter:
+                #                        chcode = self.treestore.get(chiter, 0)[0]
+                #                        chcode = utility.convertToLatin(chcode)[-2:]
+                #                        if config.digittype == 1:
+                #                            chcode = utility.convertToPersian(chcode)
+                #                        self.treestore.set(chiter, 0, basecode + chcode )
+                #                        chiter = self.treestore.iter_next(chiter)
                 per = _("Permanent") if permanent else "-"
                 self.treestore.set(iter, 0, basecode, 1, name, 2, _(
                     self.subjecttypes[type]), 4, per)
@@ -485,7 +490,7 @@ class Subjects(GObject.GObject):
                         sub_right = parent_left
 
                 else:
-                    #sub_right = self.session.query(Subject.rgt).select_from(Subject).order_by(Subject.rgt.desc()).first();
+                    # sub_right = self.session.query(Subject.rgt).select_from(Subject).order_by(Subject.rgt.desc()).first();
                     sub_right = share.config.db.session.query(
                         max(Subject.rgt)).select_from(Subject).first()
                     sub_right = sub_right[0]
@@ -497,7 +502,7 @@ class Subjects(GObject.GObject):
                     Subject.rgt > sub_right).all()
                 for r in rlist:
                     r.rgt += 2
-                   # config.db.session.add(r)
+                # config.db.session.add(r)
 
                 llist = share.config.db.session.query(Subject).filter(
                     Subject.lft > sub_right).all()
@@ -516,7 +521,7 @@ class Subjects(GObject.GObject):
 
                 lastcode = LN(lastcode, False)
                 child = self.treestore.append(
-                    iter, (lastcode, name, _(self.subjecttypes[type]), LN("0"),""))
+                    iter, (lastcode, name, _(self.subjecttypes[type]), LN("0"), ""))
                 self.temppath = self.treestore.get_path(child)
                 self.treeview.scroll_to_cell(self.temppath, None, False, 0, 0)
                 self.treeview.set_cursor(self.temppath, None, False)
@@ -532,7 +537,7 @@ class Subjects(GObject.GObject):
                 self.treestore.remove(chiter)
 
                 parent_id = share.config.db.session.query(Subject.id).filter(
-                    Subject.code == value).first() .id
+                    Subject.code == value).first().id
                 Sub = aliased(Subject, name="s")
                 Child = aliased(Subject, name="c")
 
@@ -578,7 +583,7 @@ class Subjects(GObject.GObject):
             iter), 0, basecode + chcode)
 
     def match_func(self, iter, data):
-        (column, key) = data   # data is a tuple containing column number, key
+        (column, key) = data  # data is a tuple containing column number, key
         value = convertToLatin(self.treestore.get_value(iter, column))
         if value < key:
             return -1
@@ -592,10 +597,10 @@ class Subjects(GObject.GObject):
         if name == "":
             self.treeview.collapse_all()
         code = share.config.db.session.query(Subject.code).filter(
-            Subject.name.like(name+"%")).first()
+            Subject.name.like(name + "%")).first()
         if not code:
             code = share.config.db.session.query(Subject.code).filter(
-                Subject.name.like("% " + name+"%")).first()
+                Subject.name.like("% " + name + "%")).first()
         if code:
             code = code.code
             self.highlightSubject(code)
@@ -666,13 +671,14 @@ class Subjects(GObject.GObject):
                     self.treeview.collapse_row(path)
                 else:
                     parent = self.treestore.iter_parent(iter)
-                    if parent != None:
+                    if parent is not None:
                         path = self.treestore.get_path(parent)
                         self.treeview.collapse_row(path)
                         self.treeview.set_cursor(path, None, False)
                         self.treeview.grab_focus()
                 return
-#            if Gdk.keyval_name(event.keyval) == Ri:
+
+    #            if Gdk.keyval_name(event.keyval) == Ri:
 
     def selectSubjectFromList(self, treeview, path, view_column):
         selection = self.treeview.get_selection()

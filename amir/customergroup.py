@@ -18,13 +18,12 @@ from .helpers import get_builder
 from .share import share
 from datetime import date
 from .database import *
-import gi
-gi.require_version('Gtk', '3.0')
-from gi.repository import GObject
-from gi.repository import Gtk
-from gi.repository import Gdk
 
-# config = share.config
+from gi.repository import Gtk
+import gi
+from gi.repository import GObject
+from gi.repository import Gdk
+config = share.config
 
 
 class Group(GObject.GObject):

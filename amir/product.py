@@ -56,9 +56,9 @@ class Product(productgroup.ProductGroup):
 
     def viewProducts(self):
         self.window = self.builder.get_object("viewProductsWindow")
-#              #        moved to __init__ function
-#        self.treeview = self.builder.get_object("productsTreeView")
-#        self.treestore = Gtk.TreeStore(str, str, str, str, str)
+        #              #        moved to __init__ function
+        #        self.treeview = self.builder.get_object("productsTreeView")
+        #        self.treestore = Gtk.TreeStore(str, str, str, str, str)
         self.treestore.clear()
         self.treeview.set_model(self.treestore)
 
@@ -144,11 +144,12 @@ class Product(productgroup.ProductGroup):
                 last_gid = g.id
 
             if p != None:
-                self.treestore.append(grouprow, (utility.readNumber(p.code), utility.readNumber(p.name), utility.LN(p.quantity),
-                                                 utility.LN(p.purchacePrice), utility.LN(p.sellingPrice), p.uMeasurement, p.id))
+                self.treestore.append(grouprow,
+                                      (utility.readNumber(p.code), utility.readNumber(p.name), utility.LN(p.quantity),
+                                       utility.LN(p.purchacePrice), utility.LN(p.sellingPrice), p.uMeasurement, p.id))
 
     def addProduct(self, sender, pcode=""):
-        #self.treestore = Gtk.TreeStore(str, str, str, str, str)
+        # self.treestore = Gtk.TreeStore(str, str, str, str, str)
 
         accgrp = "0"
         try:
@@ -169,7 +170,7 @@ class Product(productgroup.ProductGroup):
             Products.accGroup == accgrp).order_by(Products.code.desc()).first()
         if lastProCode:
             lastProCode = lastProCode.code
-        lastProCode = str(int(lastProCode)+1) if lastProCode else ""
+        lastProCode = str(int(lastProCode) + 1) if lastProCode else ""
         self.builder.get_object("proCodeEntry").set_text(lastProCode)
         self.builder.get_object("accGrpEntry").set_text(accgrp)
         self.builder.get_object("proNameEntry").set_text("")
@@ -200,7 +201,8 @@ class Product(productgroup.ProductGroup):
                 oversell = self.builder.get_object("oversell").get_active()
                 measurement = self.builder.get_object("uMeasureEntry").get_text()
                 success = self.saveProduct(
-                    code, accgrp, name, location, desc, quantity, q_warn, p_price, s_price, oversell, formula, measurement)
+                    code, accgrp, name, location, desc, quantity, q_warn, p_price, s_price, oversell, formula,
+                    measurement)
             else:
                 break
 
@@ -373,7 +375,7 @@ class Product(productgroup.ProductGroup):
                         prevFund = pNote.value
                     query.delete()
                     val = float(quantity) * \
-                        float(purchase_price) + abs(prevFund)
+                          float(purchase_price) + abs(prevFund)
                     dbconf = dbconfig.dbConfig()
                     share.config.db.session.add(Notebook(dbconf.get_int(
                         'inventories'), 1, -val, _("Initial balance")))
@@ -435,7 +437,7 @@ class Product(productgroup.ProductGroup):
                 self.treeview.grab_focus()
 
             # self.saveRow(edititer, (code, name, utility.LN(quantity),
-                # utility.LN(purchase_price), utility.LN(sell_price) ) )
+            # utility.LN(purchase_price), utility.LN(sell_price) ) )
 
         return True
 
@@ -502,7 +504,7 @@ class Product(productgroup.ProductGroup):
                         # Now check children(products) to find product row
                         iter = self.treestore.iter_children(iter)
                     else:
-                        #iter = pre
+                        # iter = pre
                         break
 
                 iter = pre
@@ -542,7 +544,7 @@ class Product(productgroup.ProductGroup):
             Products.accGroup == code).order_by(Products.code.desc()).first()
         if lastProCode:
             lastProCode = lastProCode.code
-        lastProCode = str(int(lastProCode)+1) if lastProCode else ""
+        lastProCode = str(int(lastProCode) + 1) if lastProCode else ""
         self.builder.get_object("proCodeEntry").set_text(lastProCode)
         sender.window.destroy()
 

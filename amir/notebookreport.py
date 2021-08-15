@@ -1,26 +1,17 @@
-import gi
-from gi.repository import Gtk
-from datetime import date
-import os
-import platform
-
 from sqlalchemy import or_
 from sqlalchemy.orm.util import outerjoin
-from sqlalchemy.sql import between
 from sqlalchemy.sql.functions import sum
-
-from . import numberentry
-from . import subjects
-from . import utility
-from . import printreport
-from . import previewreport
-from .database import *
-from .dateentry import *
-from .share import share
-from .helpers import get_builder
-from .previewreport import PreviewReport
-from .weasyprintreport import *
-
+from amir import numberentry
+from amir import subjects
+from amir import utility
+from amir import previewreport
+from amir.database import *
+from amir.dateentry import *
+from amir.helpers import get_builder
+from amir.weasyprintreport import *
+from amir.previewreport import PreviewReport
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
 # config = share.config
 
 
@@ -111,7 +102,7 @@ class NotebookReport(PreviewReport):
             query3 = share.config.db.session.query(Subject.name)
             query3 = query3.select_from(Subject).filter(Subject.code == code)
             names = query3.first()
-            if names == None:
+            if names is None:
                 errorstr = _(
                     "No subject is registered with the code: %s") % self.code.get_text()
                 msgbox = Gtk.MessageDialog(
@@ -131,26 +122,27 @@ class NotebookReport(PreviewReport):
             try:
                 value = int(utility.convertToLatin(searchkey))
             except (UnicodeEncodeError, ValueError):  # search key is not a number
-                query1 = query1.filter(Notebook.desc.like("%"+searchkey+"%"))
+                query1 = query1.filter(Notebook.desc.like("%" + searchkey + "%"))
             else:
                 query1 = query1.filter(or_(Notebook.desc.like(
-                    "%"+searchkey+"%"), Notebook.value == value, Notebook.value == -value))
+                    "%" + searchkey + "%"), Notebook.value == value, Notebook.value == -value))
         # Check the report parameters
-        if self.builder.get_object("allcontent").get_active() == True:
+        if self.builder.get_object("allcontent").get_active():
             query1 = query1.order_by(Bill.date.asc(), Bill.number.asc())
             remaining = 0
         else:
-            if self.builder.get_object("atdate").get_active() == True:
+            if self.builder.get_object("atdate").get_active():
                 date = self.date.getDateObject()
                 query1 = query1.filter(
                     Bill.date == date).order_by(Bill.number.asc())
                 query2 = query2.filter(Bill.date < date)
             else:
-                if self.builder.get_object("betweendates").get_active() == True:
+                if self.builder.get_object("betweendates").get_active():
                     fdate = self.fdate.getDateObject()
                     tdate = self.tdate.getDateObject()
                     if tdate < fdate:
-                        msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK,
+                        msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
+                                                   Gtk.ButtonsType.OK,
                                                    _("Second date value shouldn't precede the first one."))
                         msgbox.set_title(_("Invalid date order"))
                         msgbox.run()
@@ -161,7 +153,8 @@ class NotebookReport(PreviewReport):
                     query2 = query2.filter(Bill.date < fdate)
                 else:
                     if self.fnum.get_text() == '' or str(self.tnum.get_text()) == '':
-                        msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK,
+                        msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
+                                                   Gtk.ButtonsType.OK,
                                                    _("One of document numbers are empty."))
                         msgbox.set_title(_("Invalid document order"))
                         msgbox.run()
@@ -171,7 +164,8 @@ class NotebookReport(PreviewReport):
                     fnumber = int(self.fnum.get_text())
                     tnumber = int(self.tnum.get_text())
                     if tnumber < fnumber:
-                        msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK,
+                        msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR,
+                                                   Gtk.ButtonsType.OK,
                                                    _("Second document number shouldn't be greater than the first one."))
                         msgbox.set_title(_("Invalid document order"))
                         msgbox.run()
@@ -256,8 +250,8 @@ class NotebookReport(PreviewReport):
         if self.type == self.__class__.DAILY:
             todaystr = dateToString(date.today())
             html = '<p ' + self.reportObj.subjectHeaderStyle + '><u>' + \
-                _("Daily NoteBook") + '</u></p><p ' + self.reportObj.detailHeaderStyle + \
-                '>' + _("Date") + ': ' + todaystr + '</p>'
+                   _("Daily NoteBook") + '</u></p><p ' + self.reportObj.detailHeaderStyle + \
+                   '>' + _("Date") + ': ' + todaystr + '</p>'
         else:
             if share.config.digittype == 1:
                 code = utility.convertToPersian(self.subcode)
@@ -265,11 +259,15 @@ class NotebookReport(PreviewReport):
                 code = self.subcode
 
             if self.type == self.__class__.LEDGER:
-                html = '<p ' + self.reportObj.subjectHeaderStyle + '><u>' + _("Ledgers Notebook") + '</u></p><p style="text-align:center;">' + _(
-                    "Subject Name") + ': ' + self.subname + '</p><p ' + self.reportObj.detailHeaderStyle + '>' + _("Subject Code") + ': ' + code + '</p>'
+                html = '<p ' + self.reportObj.subjectHeaderStyle + '><u>' + _(
+                    "Ledgers Notebook") + '</u></p><p style="text-align:center;">' + _(
+                    "Subject Name") + ': ' + self.subname + '</p><p ' + self.reportObj.detailHeaderStyle + '>' + _(
+                    "Subject Code") + ': ' + code + '</p>'
             else:
-                html = '<p ' + self.reportObj.subjectHeaderStyle + '><u>' + _("Sub-ledgers Notebook") + '</u></p><p style="text-align:center;">' + _(
-                    "Subject Name") + ': ' + self.subname + '</p><p ' + self.reportObj.detailHeaderStyle + '>' + _("Subject Code") + ': ' + code + '</p>'
+                html = '<p ' + self.reportObj.subjectHeaderStyle + '><u>' + _(
+                    "Sub-ledgers Notebook") + '</u></p><p style="text-align:center;">' + _(
+                    "Subject Name") + ': ' + self.subname + '</p><p ' + self.reportObj.detailHeaderStyle + '>' + _(
+                    "Subject Code") + ': ' + code + '</p>'
         html += self.reportObj.createTable(report_header,
                                            report_data, col_width)
 
@@ -328,8 +326,9 @@ class NotebookReport(PreviewReport):
                 content += item.replace(",", "") + ","
             content += "\n"
 
-        dialog = Gtk.FileChooserDialog(None, self.window, Gtk.FileChooserAction.SAVE, (Gtk.STOCK_CANCEL, Gtk.ResponseType.REJECT,
-                                                                                       Gtk.STOCK_SAVE, Gtk.ResponseType.ACCEPT))
+        dialog = Gtk.FileChooserDialog(None, self.window, Gtk.FileChooserAction.SAVE,
+                                       (Gtk.STOCK_CANCEL, Gtk.ResponseType.REJECT,
+                                        Gtk.STOCK_SAVE, Gtk.ResponseType.ACCEPT))
         dialog.run()
         filename = os.path.splitext(dialog.get_filename())[0]
         file = open(filename + ".csv", "w")

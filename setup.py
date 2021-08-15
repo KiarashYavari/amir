@@ -34,7 +34,7 @@ if not os.path.exists("locale/"):
     os.mkdir("locale/")
 for lang in ('fa', 'fr', 'he', 'tr'):
     pofile = "po/" + lang + ".po"
-    locale_path = "locale/" + lang + "/LC_MESSAGES/amir.mo"
+    locale_path = "locale/" + lang + "/LC_MESSAGES/amir_scripts.py.mo"
     if not os.path.exists("locale/" + lang + "/LC_MESSAGES/"):
         os.makedirs("locale/" + lang + "/LC_MESSAGES/")
     print("generating", locale_path)
@@ -42,15 +42,15 @@ for lang in ('fa', 'fr', 'he', 'tr'):
 
 if platform.system() != 'Windows':
     data = [
-        ('share/locale/fa/LC_MESSAGES', ['locale/fa/LC_MESSAGES/amir.mo']),
-        ('share/locale/fr/LC_MESSAGES', ['locale/fr/LC_MESSAGES/amir.mo']),
-        ('share/locale/he/LC_MESSAGES', ['locale/he/LC_MESSAGES/amir.mo']),
-        ('share/locale/tr/LC_MESSAGES', ['locale/tr/LC_MESSAGES/amir.mo'])]
+        ('share/locale/fa/LC_MESSAGES', ['locale/fa/LC_MESSAGES/amir_scripts.py.mo']),
+        ('share/locale/fr/LC_MESSAGES', ['locale/fr/LC_MESSAGES/amir_scripts.py.mo']),
+        ('share/locale/he/LC_MESSAGES', ['locale/he/LC_MESSAGES/amir_scripts.py.mo']),
+        ('share/locale/tr/LC_MESSAGES', ['locale/tr/LC_MESSAGES/amir_scripts.py.mo'])]
 else:
     data = []
 # data = [('scripts' , ['/home/mint/Desktop/factors.py/'])]
 setuptools.setup(
-    name='amir',
+    name='amir_scripts.py',
     version='0.3.0',
     description='Amir accounting software',
     author='Jooyeshgar',
@@ -65,10 +65,10 @@ setuptools.setup(
             'Programming Language :: Python',
     ],
     packages=setuptools.find_packages(),
-    package_data={'amir': ['data/ui/*.glade', 'data/ui/*.glade.h', 'data/media/*.png', 'data/media/icon/*.png',
+    package_data={'amir_scripts.py': ['data/ui/*.glade', 'data/ui/*.glade.h', 'data/media/*.png', 'data/media/icon/*.png',
                            'data/amir_migrate/*.py', 'data/amir_migrate/*.cfg', 'data/amir_migrate/versions/*']},
-    keywords='amir accounting',
-    scripts=['scripts/amir'],
+    keywords='amir_scripts.py accounting',
+    scripts=['scripts/amir_scripts.py'],
     data_files=data
 )
 
