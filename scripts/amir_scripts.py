@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 
 ## \mainpage Amir accounting software
 #
@@ -44,8 +44,10 @@
 
 from amir import automaticaccounting, bankaccountsui
 from amir import handle_database
-from amir import subjects, addeditdoc, database, numberentry, notebookreport, docreport, tbalancereport, notebookutils, \
-    setting, helpers, customers, customergroup, product, productgroup, factors, cardexreport, user, utility, chequereport
+from amir import subjects, addeditdoc, database, numberentry, \
+    notebookreport, docreport, tbalancereport, notebookutils, \
+    setting, helpers, customers, customergroup, product, \
+    productgroup, factors, cardexreport, user, utility, chequereport
 from amir import amirconfig
 from amir.share import share
 import datetime
@@ -54,8 +56,10 @@ from sqlalchemy import or_
 from amir.database import *
 import locale
 import gettext
-from gi.repository import Gtk, Gdk, GdkPixbuf, GObject
 import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, Gdk, GdkPixbuf, GObject
+
 import logging
 import sys
 import os
@@ -86,7 +90,6 @@ if sys.platform == 'win32':
     Gtk.rc_set_default_files([gtkrc])
     Gtk.rc_reparse_all_for_settings(Gtk.Settings.get_default(), True)
 
-
 # Check if we are working in the source tree or from the installed
 # package and mangle the python path accordingly
 if os.path.dirname(sys.argv[0]) != ".":
@@ -98,7 +101,6 @@ else:
     fullPath = os.getcwd()
 sys.path.insert(0, os.path.dirname(fullPath))
 
-
 config = amirconfig.AmirConfig()
 share.config = config
 
@@ -108,6 +110,7 @@ os.environ['LANG'] = config.locale
 if sys.platform == 'win32':
     lang = config.locale
     from ctypes import windll
+
     kernel32 = windll.kernel32
     result = kernel32.SetEnvironmentVariableW('LANG', config.locale)
     del kernel32
@@ -115,6 +118,7 @@ if sys.platform == 'win32':
         raise Exception
 
     from ctypes import cdll
+
     msvcrt = cdll.msvcrt
     result = msvcrt._putenv('LANG=%s' % (config.locale))
     del msvcrt
@@ -143,7 +147,7 @@ class MainWindow(GObject.GObject):
         self.builder = helpers.get_builder("mainwin")
         mainWin = self.builder.get_object("window1")
         icondir = os.path.join(config.data_path, "media", "icon")
-        #self.window. set_default_icon_name(icondir+".icon")
+        # self.window. set_default_icon_name(icondir+".icon")
         try:
             icon16 = GdkPixbuf.Pixbuf.new_from_file(
                 os.path.join(icondir, "16.png"))
@@ -182,7 +186,8 @@ class MainWindow(GObject.GObject):
     def manualDocument(self, sender):
         dialog = addeditdoc.AddEditDoc(0, self.background)
         self.connect("database-changed", dialog.dbChanged)
-# def quitMainWindow(self, sender):
+
+    # def quitMainWindow(self, sender):
     #    pass
 
     def dailyNotebookReport(self, sender):
@@ -300,21 +305,21 @@ class MainWindow(GObject.GObject):
         else:
             msgbox.destroy()
 
-    def addNewProduct(self,   sender):
+    def addNewProduct(self, sender):
         obj = product.Product()
         obj.addProduct(sender)
 
-    def viewProducts(self,   sender):
+    def viewProducts(self, sender):
         obj = product.Product()
         obj.viewProducts()
         obj.connect("item-activated", obj.editProductsAndGrps)
         obj.connect("blank-activated", obj.addProduct)
 
-    def viewCustomers(self,   sender):
+    def viewCustomers(self, sender):
         obj = customers.Customer()
         obj.viewCustomers()
 
-    def addNewCustomer(self,   sender):
+    def addNewCustomer(self, sender):
         obj = customers.Customer()
         obj.addNewCustomer(sender)
 
@@ -403,7 +408,7 @@ class MainWindow(GObject.GObject):
             Gtk.StateType.NORMAL, Gdk.RGBA(0.9765, 0.9765, 0.9765, 1))
         self.background = Gtk.Fixed()
         eventbox.add(self.background)
-        #infobar.set_size_request(self.background.get_allocated_width(), -1)
+        # infobar.set_size_request(self.background.get_allocated_width(), -1)
         self.image = Gtk.Image.new_from_file(os.path.join(
             config.data_path, "media", "background.png"))
         self.background.put(self.image, 0, 0)
@@ -413,10 +418,10 @@ class MainWindow(GObject.GObject):
         # so the below query always returns zero.
 
         # if config.db.session.query(Bill.id).count()==0 :
-        #initial = self.builder.get_object("menubar1")
+        # initial = self.builder.get_object("menubar1")
         # initial.hide()
         # else:
-        #initial = self.builder.get_object("menubar2")
+        # initial = self.builder.get_object("menubar2")
         # initial.hide()
         initial = self.builder.get_object("menubar2")
         initial.hide()
@@ -430,7 +435,7 @@ class MainWindow(GObject.GObject):
 
         # Alerts
         import amir.dbconfig
-        dbconf = amir.dbconfig .dbConfig()
+        dbconf = amir.dbconfig.dbConfig()
         cashSum = config.db.session.query(func.sum(Notebook.value)).filter(
             Notebook.subject_id == dbconf.get_int('cash')).first()
         if cashSum[0] != None and cashSum[0] < 0:
@@ -484,7 +489,8 @@ class MainWindow(GObject.GObject):
     def dbSelected(self, combo):
         active_index = combo.get_active()
         if active_index != config.currentdb - 1:
-            msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.WARNING, Gtk.ButtonsType.OK_CANCEL,
+            msgbox = Gtk.MessageDialog(self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.WARNING,
+                                       Gtk.ButtonsType.OK_CANCEL,
                                        _("You have changed the current database, any unsaved data will be lost.\nAre you sure to continue?"))
             msgbox.set_title(_("Are you sure?"))
             result = msgbox.run()
@@ -547,7 +553,7 @@ class MainWindow(GObject.GObject):
 
     def alert_dialog(self, text):
         yPos = 0
-        #self.h = 30
+        # self.h = 30
         alertBarCnt = len(self.infobar)
         if alertBarCnt:
             yPos = float(
@@ -565,7 +571,7 @@ class MainWindow(GObject.GObject):
         imageHeight = pb.get_height()
         wDiff = self.background.get_allocated_width() - imageWidth
         hDiff = self.background.get_allocated_height() - imageHeight
-        self.background.move(self.image, wDiff/2, hDiff/2)
+        self.background.move(self.image, wDiff / 2, hDiff / 2)
         if len(self.infobar):
             for ib in self.infobar:
                 ib.set_size_request(
