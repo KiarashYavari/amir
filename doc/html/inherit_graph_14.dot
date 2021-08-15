@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node21 [label="Entry",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node21 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node0 [label="amir.dateentry.DateEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1dateentry_1_1_date_entry.html",tooltip=" "];
+  Node21 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node23 [label="amir.decimalentry.Decimal\lEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1decimalentry_1_1_decimal_entry.html",tooltip=" "];
+  Node21 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node24 [label="amir.numberentry.NumberEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1numberentry_1_1_number_entry.html",tooltip=" "];
+}

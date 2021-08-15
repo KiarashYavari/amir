@@ -1,0 +1,10 @@
+digraph "amir.productgroup.ProductGroup.deleteProductGroup"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.productgroup.Product\lGroup.deleteProductGroup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.product.Product.delete\lProductsAndGrps",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1product_1_1_product.html#a4f9ae527fdc9bd3cbc03c20d993967e1",tooltip=" "];
+}

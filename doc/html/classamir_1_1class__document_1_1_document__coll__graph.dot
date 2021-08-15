@@ -1,0 +1,7 @@
+digraph "amir.class_document.Document"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.class_document.Document\n|+ id\l+ number\l+ creation_date\l+ lastedit_date\l+ date\l+ permanent\l+ notebooks\l+ cheques\l+ spend_cheques\l+ cheques_result\l|+ __init__()\l+ set_bill()\l+ get_notebook_rows()\l+ set_permanent()\l+ delete()\l+ add_notebook()\l+ clear_notebook()\l+ add_cheque()\l+ save()\l+ get_error_message()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

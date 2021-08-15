@@ -1,0 +1,7 @@
+digraph "amir.class_bankaccounts.BankAccountsClass"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.class_bankaccounts.\lBankAccountsClass\n||+ __init__()\l+ get_bank_names()\l+ get_account()\l+ get_all_accounts()\l+ get_bank_id()\l+ get_bank_name()\l+ add_bank()\l+ addNewBank()\l+ add_account()\l+ delete_account()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

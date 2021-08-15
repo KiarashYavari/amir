@@ -1,0 +1,10 @@
+digraph "amir.addeditdoc.AddEditDoc.addRow"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="amir.addeditdoc.AddEditDoc.addRow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.addeditdoc.AddEditDoc.saveRow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1addeditdoc_1_1_add_edit_doc.html#a64aa76dee523341271cae1f6efb72ced",tooltip=" "];
+}

@@ -1,0 +1,10 @@
+digraph "amir.bankaccountsui.BankAccountsUI.on_save_clicked"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="amir.bankaccountsui.Bank\lAccountsUI.on_save_clicked",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.bankaccountsui.Bank\lAccountsUI.add_account",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1bankaccountsui_1_1_bank_accounts_u_i.html#a5965b587881f7aceb3e2d4ebdbcdbf15",tooltip=" "];
+}

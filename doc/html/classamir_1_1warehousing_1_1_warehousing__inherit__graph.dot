@@ -1,0 +1,9 @@
+digraph "amir.warehousing.Warehousing"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.warehousing.Warehousing\n|+ builder\l+ session\l+ proListStore\l+ grpListStore\l+ groupsList\l+ productsList\l+ grpIterDict\l+ proGrpDict\l+ proProDict\l+ viewProsWin\land 31 more...\l|+ __init__()\l+ viewProducts()\l+ populateProList()\l+ editProGrp()\l+ delProGrp()\l+ addNewProduct()\l+ chkProInfo()\l+ saveProduct()\l+ editProduct()\l+ slctAccGrp()\land 17 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Class Warehousing: Displays all the warehousing registered products."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans.ttf"];
+  Node2 [label="{GObject\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

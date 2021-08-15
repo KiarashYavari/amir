@@ -1,0 +1,12 @@
+digraph "amir.helpers.get_builder"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.helpers.get_builder",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.warehousing.Warehousing.view\lGroups",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1warehousing_1_1_warehousing.html#a68e624fbd334336e974c79ef2f78852e",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.warehousing.Warehousing.slct\lAccGrp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1warehousing_1_1_warehousing.html#a92bcd9ce3d4c3341bd6bebc19cb83985",tooltip=" "];
+}

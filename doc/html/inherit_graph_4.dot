@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="amir.bankaccountsui.Bank\lAccountsUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1bankaccountsui_1_1_bank_accounts_u_i.html",tooltip="User Interface for create/edit/select a bank account."];
+}

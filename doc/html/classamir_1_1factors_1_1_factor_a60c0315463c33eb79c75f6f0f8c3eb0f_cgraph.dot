@@ -1,0 +1,26 @@
+digraph "amir.factors.Factor.printTransaction"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="amir.factors.Factor.print\lTransaction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.factors.Factor.submit\lFactorPressed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html#a6f2cd0998cfca0eb013f6b3c61833e5d",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.factors.Factor.check\lFullFactor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html#a5f90bb49fc57f4dc8fc666a80e13cd2b",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.factors.Factor.register\lDocument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html#a83e087089878ca9ca74bc2cda47eb501",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="amir.addeditdoc.AddEditDoc.save\lDocument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1addeditdoc_1_1_add_edit_doc.html#ae0732b785199e19f540fff1eb0d7403b",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="amir.addeditdoc.AddEditDoc.showRows",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1addeditdoc_1_1_add_edit_doc.html#a27abf5d36fa24c474fc712092989cf68",tooltip=" "];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="amir.factors.Factor.save\lDocument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html#a195b37dad8971d08add55ba899718391",tooltip=" "];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node8 [label="amir.factors.Factor.register\lFactorItems",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html#a8a5a46ea8b3c6469b5fdf69ade625119",tooltip=" "];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node9 [label="amir.factors.Factor.register\lTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html#a8a57e03974e8224ba1d189cccbc4d98f",tooltip=" "];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node10 [label="amir.factors.Factor.view\lSells",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html#aa29c39c9a79b5936e0377d376c41ee29",tooltip=" "];
+}

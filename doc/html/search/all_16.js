@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['validate_5fpassword_990',['validate_password',['../classamir_1_1database_1_1_user_1_1_users.html#ad3efa6194ecc9cad3d1750e22438e215',1,'amir::database::User::Users']]],
+  ['validatediscnt_991',['validateDiscnt',['../classamir_1_1factors_1_1_factor.html#ac91daed83a08627a3efdcebd486d7c53',1,'amir::factors::Factor']]],
+  ['validatepayment_992',['validatePayment',['../classamir_1_1chequereport_1_1_cheque_report.html#a2c59b9269dc2c52d1a6f10078cebb625',1,'amir.chequereport.ChequeReport.validatePayment()'],['../classamir_1_1payments_1_1_payments.html#a2a4021b483d1ff41caaea35cb52b7e39',1,'amir.payments.Payments.validatePayment()']]],
+  ['validatepcode_993',['validatePCode',['../classamir_1_1factors_1_1_factor.html#a1d924e01d7976a5cb239caf0fcbd69b2',1,'amir::factors::Factor']]],
+  ['validateprice_994',['validatePrice',['../classamir_1_1factors_1_1_factor.html#a4914b7cbddd550dcd8fef6e03ed2ed0b',1,'amir::factors::Factor']]],
+  ['validateqnty_995',['validateQnty',['../classamir_1_1factors_1_1_factor.html#a24a62a470e1a5a83857ac42a7f7b97d1',1,'amir::factors::Factor']]],
+  ['valschanged_996',['valsChanged',['../classamir_1_1factors_1_1_factor.html#a517dde221cc41c4be02ec0b81c86145f',1,'amir::factors::Factor']]],
+  ['value_997',['value',['../classamir_1_1database_1_1_notebook_1_1_notebook.html#a615a57ab2d056e55320482693ddba97a',1,'amir.database.Notebook.Notebook.value()'],['../classamir_1_1database_1_1_permission_1_1_permissions.html#ac2c78ce08089072fd064554eee1ce3fd',1,'amir.database.Permission.Permissions.value()'],['../classamir_1_1upgrade_1_1_notebook.html#ae5ab814fd604791fbaec9d58b9564145',1,'amir.upgrade.Notebook.value()']]],
+  ['vat_998',['VAT',['../classamir_1_1database_1_1_factors_1_1_factors.html#ad1988ff4fb5a81c0c569e152989f4459',1,'amir.database.Factors.Factors.VAT()'],['../classamir_1_1factors_1_1_factor.html#a5082f60d4db6d6aef990dfec596d086a',1,'amir.factors.Factor.VAT()']]],
+  ['vatcalc_999',['vatCalc',['../classamir_1_1factors_1_1_factor.html#a08990b8fbb418398615d426ab3c213e1',1,'amir::factors::Factor']]],
+  ['vatcheck_1000',['vatCheck',['../classamir_1_1factors_1_1_factor.html#a025ab9f66200886b9acd631491d59647',1,'amir::factors::Factor']]],
+  ['version_1001',['version',['../classamir_1_1database_1_1_database.html#abe83e45aa16e20b5df1f9f900c967482',1,'amir::database::Database']]],
+  ['viewcustomergroups_1002',['viewCustomerGroups',['../classamir_1_1customergroup_1_1_group.html#ab2922e768348d8dbb4da6275d1ee925f',1,'amir::customergroup::Group']]],
+  ['viewcustomers_1003',['viewCustomers',['../classamir_1_1customers_1_1_customer.html#aa7532ace3d0bc92f3c06347895884e53',1,'amir::customers::Customer']]],
+  ['viewgroups_1004',['viewGroups',['../classamir_1_1warehousing_1_1_warehousing.html#a68e624fbd334336e974c79ef2f78852e',1,'amir::warehousing::Warehousing']]],
+  ['viewgrpwin_1005',['viewGrpWin',['../classamir_1_1warehousing_1_1_warehousing.html#a840f31330eea45cf39f696b639a40a90',1,'amir::warehousing::Warehousing']]],
+  ['viewproductgroups_1006',['viewProductGroups',['../classamir_1_1productgroup_1_1_product_group.html#a19bd40c20b08767a97ad52e2be2c0f69',1,'amir::productgroup::ProductGroup']]],
+  ['viewproducts_1007',['viewProducts',['../classamir_1_1product_1_1_product.html#ad6ecb479db9f16100b8ce441e3ff0f4c',1,'amir.product.Product.viewProducts()'],['../classamir_1_1warehousing_1_1_warehousing.html#a99baeba09b2f0283b5d2ded82b84db5c',1,'amir.warehousing.Warehousing.viewProducts()']]],
+  ['viewproswin_1008',['viewProsWin',['../classamir_1_1warehousing_1_1_warehousing.html#a7c8a7d34e2026beb329e03c6ce7f9686',1,'amir::warehousing::Warehousing']]],
+  ['viewsells_1009',['viewSells',['../classamir_1_1factors_1_1_factor.html#aa29c39c9a79b5936e0377d376c41ee29',1,'amir::factors::Factor']]]
+];

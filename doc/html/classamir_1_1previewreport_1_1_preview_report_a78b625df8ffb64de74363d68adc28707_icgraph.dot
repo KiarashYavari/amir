@@ -1,0 +1,16 @@
+digraph "amir.previewreport.PreviewReport.drawPage"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.previewreport.Preview\lReport.drawPage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.previewreport.Preview\lReport.doPreviewJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1previewreport_1_1_preview_report.html#a38583e1b922894c383078b68d824fb02",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.previewreport.Preview\lReport.showNextPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1previewreport_1_1_preview_report.html#a0712d611883e977cb202a6dbaddb203e",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.previewreport.Preview\lReport.showPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1previewreport_1_1_preview_report.html#a00018fac07e5299d07b8b148b1a3cd71",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="amir.previewreport.Preview\lReport.showPreviousPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1previewreport_1_1_preview_report.html#a6e99c07715ce130acab2d47040d80d27",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+digraph "amir.printreport.PrintReport.drawTrialReport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="amir.printreport.PrintReport.draw\lTrialReport",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.printreport.PrintReport.draw\lTableHeading",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1printreport_1_1_print_report.html#a3b59b7655d2c50607e9fdef53422cb8c",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.printreport.PrintReport.format\lHeader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1printreport_1_1_print_report.html#a80946d22123283a98c831600416c9d8d",tooltip=" "];
+}

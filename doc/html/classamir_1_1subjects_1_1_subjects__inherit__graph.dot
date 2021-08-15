@@ -1,0 +1,9 @@
+digraph "amir.subjects.Subjects"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.subjects.Subjects\n|+ builder\l+ window\l+ treeview\l+ treestore\l+ code\l+ temppath\l+ subjecttypes\l|+ __init__()\l+ addLedger()\l+ addSubLedger()\l+ editLedger()\l+ deleteLedger()\l+ saveLedger()\l+ populateChildren()\l+ editChildCodes()\l+ match_func()\l+ searchName()\l+ highlightSubject()\l+ on_key_release_event()\l+ selectSubjectFromList()\l+ dbChanged()\l+ on_select_clicked()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans.ttf"];
+  Node2 [label="{GObject\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

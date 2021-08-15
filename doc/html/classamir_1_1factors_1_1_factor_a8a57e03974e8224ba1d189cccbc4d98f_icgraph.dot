@@ -1,0 +1,12 @@
+digraph "amir.factors.Factor.registerTransaction"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.factors.Factor.register\lTransaction",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.factors.Factor.submit\lFactorPressed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html#a6f2cd0998cfca0eb013f6b3c61833e5d",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.factors.Factor.print\lTransaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html#a60c0315463c33eb79c75f6f0f8c3eb0f",tooltip=" "];
+}

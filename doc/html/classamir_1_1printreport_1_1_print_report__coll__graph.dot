@@ -1,0 +1,7 @@
+digraph "amir.printreport.PrintReport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.printreport.PrintReport\n|+ cell_margin\l+ line\l+ row_height\l+ header_height\l+ heading_height\l+ operation\l+ page_setup\l+ content\l+ cols_width\l+ heading\land 13 more...\l|+ __init__()\l+ setHeader()\l+ beginPrint()\l+ doPrintJob()\l+ printPage()\l+ formatHeader()\l+ drawDailyNotebook()\l+ drawSubjectNotebook()\l+ drawDocument()\l+ drawTrialReport()\l+ setDrawFunction()\l+ drawTableHeading()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

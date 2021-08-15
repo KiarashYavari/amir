@@ -1,0 +1,7 @@
+digraph "amir.bankaccountsui.BankAccountsUI"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.bankaccountsui.Bank\lAccountsUI\n|+ main_window_background\l+ bank_names_count\l+ owner_id\l+ builder\l+ bankaccounts_class\l+ selected_id\l|+ __init__()\l+ show_accounts()\l+ add_account()\l+ on_add_account_clicked()\l+ on_delete_account_clicked()\l+ on_edit_account_clicked()\l+ on_treeview_row_activated()\l+ on_general_window_destroy()\l+ on_add_bank_clicked()\l+ on_add_window_delete\l_event()\l+ on_save_clicked()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="User Interface for create/edit/select a bank account."];
+}

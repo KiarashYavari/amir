@@ -1,0 +1,7 @@
+digraph "amir.tbalancereport.TBalanceReport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.tbalancereport.TBalance\lReport\n|+ builder\l+ window\l+ date\l+ fdate\l+ tdate\l+ reportObj\l|+ __init__()\l+ createReport()\l+ createPrintJob()\l+ previewReport()\l+ printReport()\l+ exportToCSV()\l+ atdate_toggled()\l+ betweendates_toggled()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

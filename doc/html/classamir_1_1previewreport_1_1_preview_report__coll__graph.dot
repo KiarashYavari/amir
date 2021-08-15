@@ -1,0 +1,7 @@
+digraph "amir.previewreport.PreviewReport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.previewreport.Preview\lReport\n|+ content\l+ heading\l+ lines_per_page\l+ builder\l+ treeview\l+ liststore\l+ pagecount\l+ pageNumber\l+ current_page\l+ window\l+ drawfunction\l+ pages\l|+ __init__()\l+ setDrawFunction()\l+ doPreviewJob()\l+ drawPage()\l+ showPreviousPage()\l+ showNextPage()\l+ showPage()\l+ drawDefaultReport()\l+ drawDailyNotebook()\l+ drawSubjectNotebook()\l+ drawDocument()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

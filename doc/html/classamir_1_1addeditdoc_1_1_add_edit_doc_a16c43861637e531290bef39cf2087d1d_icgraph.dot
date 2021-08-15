@@ -1,0 +1,12 @@
+digraph "amir.addeditdoc.AddEditDoc.subjectSelected"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.addeditdoc.AddEditDoc.subject\lSelected",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.notebookreport.Notebook\lReport.selectSubject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1notebookreport_1_1_notebook_report.html#a78900426afb2aa6d6b7eee8de60aa42e",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.addeditdoc.AddEditDoc.select\lSubject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1addeditdoc_1_1_add_edit_doc.html#a3137f8d3ce97cdcd9bf3ec4b2abd6247",tooltip=" "];
+}

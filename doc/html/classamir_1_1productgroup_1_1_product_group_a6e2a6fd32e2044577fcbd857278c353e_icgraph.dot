@@ -1,0 +1,16 @@
+digraph "amir.productgroup.ProductGroup.saveRow"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.productgroup.Product\lGroup.saveRow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.productgroup.Product\lGroup.saveProductGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1productgroup_1_1_product_group.html#add1de604c8b2de40ec993ae600a7cca0",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.productgroup.Product\lGroup.addProductGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1productgroup_1_1_product_group.html#acabce6788b3f06ac1de246353aaf3a55",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.productgroup.Product\lGroup.editProductGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1productgroup_1_1_product_group.html#aff62283ff8bca006ac306818f69bec2b",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="amir.product.Product.edit\lProductsAndGrps",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1product_1_1_product.html#ababc732e3d38ffd110324fb9aed65787",tooltip=" "];
+}

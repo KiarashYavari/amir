@@ -1,0 +1,30 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node9 [label="GObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node0 [label="amir.chequereport.Cheque\lReport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1chequereport_1_1_cheque_report.html",tooltip=" "];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node11 [label="amir.customergroup.Group",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1customergroup_1_1_group.html",tooltip=" "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node12 [label="amir.customers.Customer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1customers_1_1_customer.html",tooltip="Register or edit a customer and create a subject row."];
+  Node9 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node13 [label="amir.payments.Payments",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1payments_1_1_payments.html",tooltip=" "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node14 [label="amir.factors.Factor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1factors_1_1_factor.html",tooltip=" "];
+  Node9 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node15 [label="amir.productgroup.Product\lGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1productgroup_1_1_product_group.html",tooltip=" "];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node16 [label="amir.product.Product",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1product_1_1_product.html",tooltip=" "];
+  Node9 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node17 [label="amir.setting.Setting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1setting_1_1_setting.html",tooltip=" "];
+  Node9 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node18 [label="amir.subjects.Subjects",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1subjects_1_1_subjects.html",tooltip=" "];
+  Node9 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node19 [label="amir.user.User",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1user_1_1_user.html",tooltip=" "];
+  Node9 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node20 [label="amir.warehousing.Warehousing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1warehousing_1_1_warehousing.html",tooltip="Class Warehousing: Displays all the warehousing registered products."];
+}

@@ -1,0 +1,20 @@
+digraph "amir.productgroup.ProductGroup.editProductGroup"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="amir.productgroup.Product\lGroup.editProductGroup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.productgroup.Product\lGroup.saveProductGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1productgroup_1_1_product_group.html#add1de604c8b2de40ec993ae600a7cca0",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.customergroup.Group.saveRow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1customergroup_1_1_group.html#afa59f31cd5580e1740b29306ae3689b8",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.addeditdoc.AddEditDoc.saveRow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1addeditdoc_1_1_add_edit_doc.html#a64aa76dee523341271cae1f6efb72ced",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="amir.productgroup.Product\lGroup.saveRow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1productgroup_1_1_product_group.html#a6e2a6fd32e2044577fcbd857278c353e",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="amir.product.Product.saveRow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1product_1_1_product.html#a7fd9bf1663bd7ce3a3c42b10f66846a0",tooltip=" "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="amir.customers.Customer.saveRow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1customers_1_1_customer.html#a1f9a804eb76f351befc506480cc10183",tooltip=" "];
+}

@@ -1,0 +1,30 @@
+digraph "amir.automaticaccounting.AutomaticAccounting.check_save_button"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.automaticaccounting.\lAutomaticAccounting.check\l_save_button",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.automaticaccounting.\lAutomaticAccounting.on\l_cash_payment_entry_change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#a5fac2f2542e978b9b64ffb709f05964d",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.automaticaccounting.\lAutomaticAccounting.on\l_discount_entry_change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#ac9508acb2d3646e0743cde95924715b6",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.automaticaccounting.\lAutomaticAccounting.on\l_total_credit_entry_change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#ad5c3e392137079651e9e956e525f0347",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="amir.automaticaccounting.\lAutomaticAccounting.update\l_non_cash_payment_label",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#a0a408123c67b2ee92f079d52f15f3404",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="amir.automaticaccounting.\lAutomaticAccounting.on\l_type_change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#a85c148880bdff4a3f352d44f376ca718",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="amir.automaticaccounting.\lAutomaticAccounting.update\l_spend_cheque_label",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#a666e861555e5cc75638dc80b0c78f403",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node8 [label="amir.automaticaccounting.\lAutomaticAccounting.on\l_customer_selected",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#a22e8b13aba5ba0be1089676152cf7ae3",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node9 [label="amir.automaticaccounting.\lAutomaticAccounting.on\l_from_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#ad73942cd806a2bf1248aae9eb42941a6",tooltip=" "];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node10 [label="amir.automaticaccounting.\lAutomaticAccounting.on\l_to_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#a7def11dacb47163b3f73b33490f1c5e6",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node11 [label="amir.automaticaccounting.\lAutomaticAccounting.on\l_subject_selected",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#a9db3755840b526094ed1d15d2771d73f",tooltip=" "];
+  Node11 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+}

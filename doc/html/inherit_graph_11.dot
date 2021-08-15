@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="amir.class_subject.Subjects",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1class__subject_1_1_subjects.html",tooltip=" "];
+}

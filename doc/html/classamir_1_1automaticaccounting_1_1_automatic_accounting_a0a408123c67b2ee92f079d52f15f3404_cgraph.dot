@@ -1,0 +1,20 @@
+digraph "amir.automaticaccounting.AutomaticAccounting.update_non_cash_payment_label"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="amir.automaticaccounting.\lAutomaticAccounting.update\l_non_cash_payment_label",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.automaticaccounting.\lAutomaticAccounting.on\l_cash_payment_entry_change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#a5fac2f2542e978b9b64ffb709f05964d",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.automaticaccounting.\lAutomaticAccounting.check\l_save_button",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1automaticaccounting_1_1_automatic_accounting.html#ab4be1bbc1ae8ae31486c2bc8f70d5c34",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.utility.getFloat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___utility.html#gab359bca86538a10272824cabaa24430c",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="amir.utility.convertToLatin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___utility.html#gabf2b9d91803e7a6c154b9f722259b244",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="amir.utility.LN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___utility.html#ga0743603f91496779ad987d6a561f2142",tooltip="Check the active locale and choose number characters from that locale."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="amir.utility.convertToPersian",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group___utility.html#ga8b89d0d191ac53afdec68da806fe310d",tooltip=" "];
+}

@@ -1,0 +1,7 @@
+digraph "amir.cardexreport.CardexReport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.cardexreport.Cardex\lReport\n|+ builder\l+ window\l+ treeview\l+ treestore\l+ rows\l+ session\l+ dateToEntry\l+ dateFromEntry\l+ proVal\l+ customerEntry\l|+ __init__()\l+ selectProduct()\l+ proSelected()\l+ selectCustomers()\l+ sellerSelected()\l+ showResult()\l+ searchProduct()\l+ factorFilter()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,48 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node33 [label="Base",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node33 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node0 [label="amir.database.BankAccounts.\lBankAccounts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_bank_accounts_1_1_bank_accounts.html",tooltip=" "];
+  Node33 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node35 [label="amir.database.BankNames.\lBankNames",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_bank_names_1_1_bank_names.html",tooltip=" "];
+  Node33 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node36 [label="amir.database.Bill.Bill",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_bill_1_1_bill.html",tooltip=" "];
+  Node33 -> Node37 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node37 [label="amir.database.Cheque.Cheque",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_cheque_1_1_cheque.html",tooltip=" "];
+  Node33 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node38 [label="amir.database.ChequeHistory.\lChequeHistory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_cheque_history_1_1_cheque_history.html",tooltip=" "];
+  Node33 -> Node39 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node39 [label="amir.database.Config.Config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_config_1_1_config.html",tooltip=" "];
+  Node33 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node40 [label="amir.database.CustGroups.\lCustGroups",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_cust_groups_1_1_cust_groups.html",tooltip=" "];
+  Node33 -> Node41 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node41 [label="amir.database.Customers.\lCustomers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_customers_1_1_customers.html",tooltip=" "];
+  Node33 -> Node42 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node42 [label="amir.database.FactorItems.\lFactorItems",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_factor_items_1_1_factor_items.html",tooltip=" "];
+  Node33 -> Node43 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node43 [label="amir.database.Factors.Factors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_factors_1_1_factors.html",tooltip=" "];
+  Node33 -> Node44 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node44 [label="amir.database.Notebook.Notebook",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_notebook_1_1_notebook.html",tooltip=" "];
+  Node33 -> Node45 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node45 [label="amir.database.Payment.Payment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_payment_1_1_payment.html",tooltip="Version 0.2 tables."];
+  Node33 -> Node46 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node46 [label="amir.database.Permission.\lPermissions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_permission_1_1_permissions.html",tooltip=" "];
+  Node33 -> Node47 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node47 [label="amir.database.ProductGroups.\lProductGroups",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_product_groups_1_1_product_groups.html",tooltip=" "];
+  Node33 -> Node48 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node48 [label="amir.database.Products.Products",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_products_1_1_products.html",tooltip=" "];
+  Node33 -> Node49 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node49 [label="amir.database.Subject.Subject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_subject_1_1_subject.html",tooltip=" "];
+  Node33 -> Node50 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node50 [label="amir.database.User.Users",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1database_1_1_user_1_1_users.html",tooltip=" "];
+  Node33 -> Node51 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node51 [label="amir.upgrade.Bill",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1upgrade_1_1_bill.html",tooltip=" "];
+  Node33 -> Node52 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node52 [label="amir.upgrade.Notebook",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1upgrade_1_1_notebook.html",tooltip=" "];
+  Node33 -> Node53 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node53 [label="amir.upgrade.Subject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1upgrade_1_1_subject.html",tooltip=" "];
+}

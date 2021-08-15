@@ -1,0 +1,9 @@
+digraph "amir.setting.Setting"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.setting.Setting\n|+ builder\l+ window\l+ filechooser\l+ dbname\l+ treeview\l+ liststore\l+ active_iter\l+ infolabel\l+ langlist\l+ dateformat\land 6 more...\l|+ __init__()\l+ changeCurrentDb()\l+ selectDbFile()\l+ addDatabase()\l+ removeDatabase()\l+ repairDatabaseNow()\l+ repairDbFunc()\l+ applyDatabaseSetting()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans.ttf"];
+  Node2 [label="{GObject\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

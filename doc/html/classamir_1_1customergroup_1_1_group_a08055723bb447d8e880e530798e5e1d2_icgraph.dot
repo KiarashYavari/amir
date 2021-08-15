@@ -1,0 +1,14 @@
+digraph "amir.customergroup.Group.saveCustGroup"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.customergroup.Group.save\lCustGroup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.customergroup.Group.add\lCustomerGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1customergroup_1_1_group.html#aafe1ef3afed637cb65bc56b274460560",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.customergroup.Group.edit\lCustomerGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1customergroup_1_1_group.html#a51d1ef6bc604beb4ba3c85bf99cb2db0",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.customers.Customer.edit\lCustAndGrps",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1customers_1_1_customer.html#a8701f3df2fe337319b0828c474e01184",tooltip=" "];
+}

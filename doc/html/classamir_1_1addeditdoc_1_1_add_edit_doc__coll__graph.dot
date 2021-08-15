@@ -1,0 +1,7 @@
+digraph "amir.addeditdoc.AddEditDoc"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.addeditdoc.AddEditDoc\n|+ main_window_background\l+ new_items\l+ deleted_items\l+ edit_items\l+ builder\l+ window\l+ date\l+ code\l+ amount\l+ treeview\land 6 more...\l|+ __init__()\l+ showRows()\l+ addRow()\l+ editRow()\l+ saveRow()\l+ deleteRow()\l+ saveDocument()\l+ makePermanent()\l+ makeTemporary()\l+ deleteDocument()\l+ auto_Document()\l+ selectSubject()\l+ subjectSelected()\l+ dbChanged()\l+ updateSum()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Register or edit a document."];
+}

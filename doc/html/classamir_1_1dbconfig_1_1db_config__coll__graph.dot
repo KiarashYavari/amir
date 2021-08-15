@@ -1,0 +1,7 @@
+digraph "amir.dbconfig.dbConfig"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.dbconfig.dbConfig\n|+ data\l|+ get_default()\l+ get_value()\l+ exists()\l+ set_value()\l+ add()\l+ delete()\l+ get_int()\l+ get_int_list()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

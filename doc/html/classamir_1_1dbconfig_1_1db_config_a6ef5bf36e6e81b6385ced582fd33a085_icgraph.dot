@@ -1,0 +1,12 @@
+digraph "amir.dbconfig.dbConfig.get_value"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.dbconfig.dbConfig.get\l_value",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.dbconfig.dbConfig.get_int",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1dbconfig_1_1db_config.html#a50452056689cbc0c54dbb2c12091e2c0",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.dbconfig.dbConfig.get\l_int_list",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1dbconfig_1_1db_config.html#aaf5f96288251ccc28016e88a3ff5441f",tooltip=" "];
+}

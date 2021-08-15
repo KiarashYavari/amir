@@ -1,0 +1,10 @@
+digraph "amir.class_bankaccounts.BankAccountsClass.add_bank"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.class_bankaccounts.\lBankAccountsClass.add_bank",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.class_bankaccounts.\lBankAccountsClass.addNewBank",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1class__bankaccounts_1_1_bank_accounts_class.html#a41542ae74728049e93f4ddced8d52a6e",tooltip=" "];
+}

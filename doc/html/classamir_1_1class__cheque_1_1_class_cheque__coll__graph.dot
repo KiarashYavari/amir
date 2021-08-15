@@ -1,0 +1,7 @@
+digraph "amir.class_cheque.ClassCheque"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.class_cheque.ClassCheque\n|+ new_cheques\l+ sp_cheques\l|+ __init__()\l+ get_cheque_info()\l+ get_spendable_cheques()\l+ get_histroy()\l+ get_all_cheques()\l+ delete()\l+ edit()\l+ add_cheque()\l+ update_status()\l+ save()\l+ save_cheque_history()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

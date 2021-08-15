@@ -1,0 +1,10 @@
+digraph "amir.warehousing.Warehousing.addGroup"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.warehousing.Warehousing.add\lGroup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.warehousing.Warehousing.chkEdit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1warehousing_1_1_warehousing.html#a8be6d55b44a807518d3486454b7bdeda",tooltip=" "];
+}

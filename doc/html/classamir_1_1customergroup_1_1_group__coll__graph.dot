@@ -1,0 +1,9 @@
+digraph "amir.customergroup.Group"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.customergroup.Group\n|+ builder\l+ window\l+ treestore\l+ grpCodeEntry\l+ treeview\l|+ __init__()\l+ viewCustomerGroups()\l+ addCustomerGroup()\l+ editCustomerGroup()\l+ deleteCustomerGroup()\l+ saveCustGroup()\l+ saveRow()\l+ highlightGroup()\l+ selectCustGroupFromList()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans.ttf"];
+  Node2 [label="{GObject\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

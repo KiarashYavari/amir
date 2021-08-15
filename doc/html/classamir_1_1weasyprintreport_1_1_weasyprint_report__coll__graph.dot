@@ -1,0 +1,7 @@
+digraph "amir.weasyprintreport.WeasyprintReport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.weasyprintreport.Weasyprint\lReport\n|+ direction\l+ subjectHeaderStyle\l+ detailHeaderStyle\l|+ __init__()\l+ doPrint()\l+ showPreview()\l+ createTable()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

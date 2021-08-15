@@ -1,0 +1,9 @@
+digraph "amir.chequereport.ChequeReport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.chequereport.Cheque\lReport\n|+ cal\l+ builder\l+ window\l+ treeviewIncoming\l+ treeviewOutgoing\l+ treeviewNotPassed\l+ treeviewNotCashed\l+ treeviewDeleted\l+ treeviewCashed\l+ treeviewPassed\land 38 more...\l+ chequeStatus\l+ treeviews\l|+ __init__()\l+ searchFilter()\l+ showResult()\l+ getSelection()\l+ editCheque()\l+ initChequeForm()\l+ submitPayment()\l+ cancelPayment()\l+ on_add_bank_clicked()\l+ odatAzMoshtari()\land 17 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans.ttf"];
+  Node2 [label="{GObject\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

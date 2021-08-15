@@ -1,0 +1,27 @@
+var classamir_1_1notebookreport_1_1_notebook_report =
+[
+    [ "__init__", "classamir_1_1notebookreport_1_1_notebook_report.html#a333b58b0b5b507fef31eadc4168fdd4d", null ],
+    [ "atdate_toggled", "classamir_1_1notebookreport_1_1_notebook_report.html#ad22c0a239fccf746ddee21457f728679", null ],
+    [ "betweendates_toggled", "classamir_1_1notebookreport_1_1_notebook_report.html#a8fbe978a97ff74afaace673be8086a44", null ],
+    [ "betweendocs_toggled", "classamir_1_1notebookreport_1_1_notebook_report.html#ad5776c2925d1786d7ada2a1c39218208", null ],
+    [ "createPreviewJob", "classamir_1_1notebookreport_1_1_notebook_report.html#adb8b7fdb77e7edbe24350bb3871c3d1e", null ],
+    [ "createPrintJob", "classamir_1_1notebookreport_1_1_notebook_report.html#a38c80a94f3086056ed92c1bc87935e4d", null ],
+    [ "createReport", "classamir_1_1notebookreport_1_1_notebook_report.html#ac2c25ec9dce2b059496d10bb5d0297a0", null ],
+    [ "exportToCSV", "classamir_1_1notebookreport_1_1_notebook_report.html#a66a78c1940764fc6ed27f4197b7b2437", null ],
+    [ "previewReport", "classamir_1_1notebookreport_1_1_notebook_report.html#a26db05a22c2ca42eeb48e0930cfbfa16", null ],
+    [ "printReport", "classamir_1_1notebookreport_1_1_notebook_report.html#abc72ebb540ba085fabbdbe2d60ab9f2f", null ],
+    [ "selectSubject", "classamir_1_1notebookreport_1_1_notebook_report.html#a78900426afb2aa6d6b7eee8de60aa42e", null ],
+    [ "subjectSelected", "classamir_1_1notebookreport_1_1_notebook_report.html#a6a6c5c4fdae7f98b4a44cfa65cce635a", null ],
+    [ "builder", "classamir_1_1notebookreport_1_1_notebook_report.html#a3260d6621833813715ab31854079b6e5", null ],
+    [ "code", "classamir_1_1notebookreport_1_1_notebook_report.html#aa4816a510fad2bae133c73ce97e2092a", null ],
+    [ "date", "classamir_1_1notebookreport_1_1_notebook_report.html#a28600907764ae02cb7fde947fefab753", null ],
+    [ "fdate", "classamir_1_1notebookreport_1_1_notebook_report.html#af589525674436910eeeadee8d61f0000", null ],
+    [ "fnum", "classamir_1_1notebookreport_1_1_notebook_report.html#aaa438d03f372dcaa206c5de01108ef33", null ],
+    [ "reportObj", "classamir_1_1notebookreport_1_1_notebook_report.html#ab0207b23e11732c81ee47e8725ab5627", null ],
+    [ "subcode", "classamir_1_1notebookreport_1_1_notebook_report.html#af9390e90a3c2e73fa3d9c17bf175d42d", null ],
+    [ "subname", "classamir_1_1notebookreport_1_1_notebook_report.html#a9bac229307496a16e258a33f6950326a", null ],
+    [ "tdate", "classamir_1_1notebookreport_1_1_notebook_report.html#a5ad6289c75c6ee428c54df8cda262750", null ],
+    [ "tnum", "classamir_1_1notebookreport_1_1_notebook_report.html#ac41456f11959de076c3467b645c42c3e", null ],
+    [ "type", "classamir_1_1notebookreport_1_1_notebook_report.html#abf42546e88be69503023b78a61a336d2", null ],
+    [ "window", "classamir_1_1notebookreport_1_1_notebook_report.html#a274fee7b93cbf1241ee966e1f07f8292", null ]
+];

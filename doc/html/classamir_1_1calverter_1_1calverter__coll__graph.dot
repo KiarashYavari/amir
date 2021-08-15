@@ -1,0 +1,7 @@
+digraph "amir.calverter.calverter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.calverter.calverter\n|+ J0000\l+ J1970\l+ JMJD\l+ J1900\l+ J1904\l+ NormLeap\l+ GREGORIAN_EPOCH\l+ GREGORIAN_WEEKDAYS\l+ ISLAMIC_EPOCH\l+ ISLAMIC_WEEKDAYS\l+ JALALI_EPOCH\l+ JALALI_WEEKDAYS\l|+ __init__()\l+ jwday()\l+ weekday_before()\l+ search_weekday()\l+ nearest_weekday()\l+ next_weekday()\l+ next_or_current_weekday()\l+ previous_weekday()\l+ previous_or_current\l_weekday()\l+ leap_gregorian()\land 14 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

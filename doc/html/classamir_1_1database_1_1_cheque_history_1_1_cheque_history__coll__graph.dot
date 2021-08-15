@@ -1,0 +1,9 @@
+digraph "amir.database.ChequeHistory.ChequeHistory"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.database.ChequeHistory.\lChequeHistory\n|+ Id\l+ ChequeId\l+ Amount\l+ WrtDate\l+ DueDate\l+ Serial\l+ Status\l+ Cust\l+ Account\l+ TransId\l+ Desc\l+ Date\l|+ __init__()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans.ttf"];
+  Node2 [label="{Base\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

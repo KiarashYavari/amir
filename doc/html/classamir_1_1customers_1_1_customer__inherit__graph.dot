@@ -1,0 +1,11 @@
+digraph "amir.customers.Customer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.customers.Customer\n|+ custgrpentry\l+ custIntroducerEntry\l+ boxCommissionRateEntry\l+ boxDiscRateEntry\l+ window\l+ costmenu\l+ treeview\l+ treestore\l+ editCustomer\l+ customerForm\l+ customerId\l+ editIter\l|+ __init__()\l+ viewCustomers()\l+ addNewCustomer()\l+ customerFormCanceled()\l+ customerFormOkPressed()\l+ on_markedChk_toggled()\l+ saveCustomer()\l+ editCustAndGrps()\l+ deleteCustAndGrps()\l+ saveRow()\land 7 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Register or edit a customer and create a subject row."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans.ttf"];
+  Node2 [label="{amir.customergroup.Group\n|+ builder\l+ window\l+ treestore\l+ grpCodeEntry\l+ treeview\l|+ __init__()\l+ viewCustomerGroups()\l+ addCustomerGroup()\l+ editCustomerGroup()\l+ deleteCustomerGroup()\l+ saveCustGroup()\l+ saveRow()\l+ highlightGroup()\l+ selectCustGroupFromList()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1customergroup_1_1_group.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans.ttf"];
+  Node3 [label="{GObject\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

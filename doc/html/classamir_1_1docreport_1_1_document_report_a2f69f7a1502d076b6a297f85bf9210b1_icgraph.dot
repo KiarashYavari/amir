@@ -1,0 +1,14 @@
+digraph "amir.docreport.DocumentReport.createPrintJob"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.docreport.DocumentReport.create\lPrintJob",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.tbalancereport.TBalance\lReport.printReport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1tbalancereport_1_1_t_balance_report.html#a37995b93f99097ff4445b2c64d3e8d62",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.docreport.DocumentReport.print\lReport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1docreport_1_1_document_report.html#aa64bbe38fb749c40c97ef00801ed58a4",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.notebookreport.Notebook\lReport.printReport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1notebookreport_1_1_notebook_report.html#abc72ebb540ba085fabbdbe2d60ab9f2f",tooltip=" "];
+}

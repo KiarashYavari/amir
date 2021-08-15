@@ -1,0 +1,10 @@
+digraph "amir.subjects.Subjects.highlightSubject"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.subjects.Subjects.highlight\lSubject",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.subjects.Subjects.searchName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1subjects_1_1_subjects.html#a46f05a0eae01ae79918b836537f623c9",tooltip=" "];
+}

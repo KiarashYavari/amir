@@ -1,0 +1,7 @@
+digraph "amir.automaticaccounting.AutomaticAccounting"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.automaticaccounting.\lAutomaticAccounting\n|+ type_names\l+ liststore\l+ type_index\l+ from_id\l+ to_id\l+ from_code\l+ to_code\l+ from_name\l+ to_name\l+ builder\land 10 more...\l+ type_names\l+ type_configs\l|+ __init__()\l+ on_type_change()\l+ on_from_clicked()\l+ on_to_clicked()\l+ on_total_credit_entry\l_change()\l+ on_discount_entry_change()\l+ on_discount_clicked()\l+ on_cash_payment_entry\l_change()\l+ update_non_cash_payment\l_label()\l+ update_spend_cheque\l_label()\land 8 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

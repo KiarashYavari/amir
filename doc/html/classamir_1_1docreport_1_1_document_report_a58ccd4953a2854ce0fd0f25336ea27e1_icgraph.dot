@@ -1,0 +1,31 @@
+digraph "amir.docreport.DocumentReport.createReport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.docreport.DocumentReport.create\lReport",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.notebookreport.Notebook\lReport.createPreviewJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1notebookreport_1_1_notebook_report.html#adb8b7fdb77e7edbe24350bb3871c3d1e",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.tbalancereport.TBalance\lReport.createPrintJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1tbalancereport_1_1_t_balance_report.html#a36d5c862d4934b555d8a46cedccab3fd",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.tbalancereport.TBalance\lReport.printReport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1tbalancereport_1_1_t_balance_report.html#a37995b93f99097ff4445b2c64d3e8d62",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="amir.docreport.DocumentReport.create\lPrintJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1docreport_1_1_document_report.html#a2f69f7a1502d076b6a297f85bf9210b1",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="amir.docreport.DocumentReport.print\lReport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1docreport_1_1_document_report.html#aa64bbe38fb749c40c97ef00801ed58a4",tooltip=" "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="amir.notebookreport.Notebook\lReport.printReport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1notebookreport_1_1_notebook_report.html#abc72ebb540ba085fabbdbe2d60ab9f2f",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node8 [label="amir.notebookreport.Notebook\lReport.createPrintJob",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1notebookreport_1_1_notebook_report.html#a38c80a94f3086056ed92c1bc87935e4d",tooltip=" "];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node9 [label="amir.tbalancereport.TBalance\lReport.exportToCSV",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1tbalancereport_1_1_t_balance_report.html#ace5a936c7795cf526c308ebcc64058a8",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node10 [label="amir.docreport.DocumentReport.export\lToCSV",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1docreport_1_1_document_report.html#a8658b9863ee95dec31f166a86979b3a5",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node11 [label="amir.notebookreport.Notebook\lReport.exportToCSV",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1notebookreport_1_1_notebook_report.html#a66a78c1940764fc6ed27f4197b7b2437",tooltip=" "];
+}

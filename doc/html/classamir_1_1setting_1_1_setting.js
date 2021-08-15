@@ -1,0 +1,27 @@
+var classamir_1_1setting_1_1_setting =
+[
+    [ "__init__", "classamir_1_1setting_1_1_setting.html#a578c022ab31ae72e71093380caa6c4bb", null ],
+    [ "addDatabase", "classamir_1_1setting_1_1_setting.html#a312668514ddb2228a93ea450c8e48743", null ],
+    [ "applyDatabaseSetting", "classamir_1_1setting_1_1_setting.html#a492b5e2e818e01c3cbbbbc154525951b", null ],
+    [ "changeCurrentDb", "classamir_1_1setting_1_1_setting.html#a09b71204ef2ee31f614dea093a41949f", null ],
+    [ "removeDatabase", "classamir_1_1setting_1_1_setting.html#a2db43dacb8c70c7a3b961b2bb38aab63", null ],
+    [ "repairDatabaseNow", "classamir_1_1setting_1_1_setting.html#a7e7e2bef06be5f3fc0d96ae0326eb52d", null ],
+    [ "repairDbFunc", "classamir_1_1setting_1_1_setting.html#a71ba2a92d0693fb2ce5ea034faaf0111", null ],
+    [ "selectDbFile", "classamir_1_1setting_1_1_setting.html#a1f2577682910d8a88d5063ded67f9a19", null ],
+    [ "active_iter", "classamir_1_1setting_1_1_setting.html#a1e71f4533e51391be4564cd5ae96a2af", null ],
+    [ "builder", "classamir_1_1setting_1_1_setting.html#a8d9a3f9bc1b95bb668a36293c3e0f612", null ],
+    [ "dateformat", "classamir_1_1setting_1_1_setting.html#a5bf251efe28655b83be88b6e76a3a5c2", null ],
+    [ "dateorder", "classamir_1_1setting_1_1_setting.html#a4055fd8892a6b77f2478632568553d16", null ],
+    [ "dbname", "classamir_1_1setting_1_1_setting.html#a7076aa3a800c174f5fd4e49926663081", null ],
+    [ "delimiter", "classamir_1_1setting_1_1_setting.html#a0a1b3cfae47feb48a51cab67509e8a47", null ],
+    [ "filechooser", "classamir_1_1setting_1_1_setting.html#a749d8b1a020f08e118db388b76514058", null ],
+    [ "infolabel", "classamir_1_1setting_1_1_setting.html#af25c3a49a39156d3b5d1b3b3f3efc00e", null ],
+    [ "langlist", "classamir_1_1setting_1_1_setting.html#a1475104cfe4e94f1fb47ebb835ebf17d", null ],
+    [ "liststore", "classamir_1_1setting_1_1_setting.html#a322b09d880effb39c21eab2e42cbe490", null ],
+    [ "msgbox", "classamir_1_1setting_1_1_setting.html#ab41629f263d7fda7a5f4763e8ffc861a", null ],
+    [ "page_setup", "classamir_1_1setting_1_1_setting.html#ad06ffa80647a2f18412e969779903280", null ],
+    [ "repair_atstart", "classamir_1_1setting_1_1_setting.html#abb0a45ca61534317ad8ddc664fa10a5e", null ],
+    [ "treeview", "classamir_1_1setting_1_1_setting.html#a97bf6d68bb01de50183e4dde4a4f956f", null ],
+    [ "uselatin", "classamir_1_1setting_1_1_setting.html#aab3d176496ad75d9a30eab5c02da8948", null ],
+    [ "window", "classamir_1_1setting_1_1_setting.html#a5186ada17c4c638e0128ec3fdc5fdc42", null ]
+];

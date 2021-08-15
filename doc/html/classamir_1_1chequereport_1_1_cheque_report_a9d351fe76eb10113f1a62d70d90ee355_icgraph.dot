@@ -1,0 +1,10 @@
+digraph "amir.chequereport.ChequeReport.initChequeForm"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.chequereport.Cheque\lReport.initChequeForm",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.chequereport.Cheque\lReport.editCheque",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1chequereport_1_1_cheque_report.html#aa1b7fe37f8f43ff46d34017a2e654466",tooltip=" "];
+}

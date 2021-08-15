@@ -1,0 +1,14 @@
+digraph "amir.payments.Payments.submitPayment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="amir.payments.Payments.submit\lPayment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.payments.Payments.add\lToTotalAmount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1payments_1_1_payments.html#a63d668794152b22bd2885faa610fd727",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.payments.Payments.validate\lPayment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1payments_1_1_payments.html#a2a4021b483d1ff41caaea35cb52b7e39",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="amir.chequereport.Cheque\lReport.validatePayment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1chequereport_1_1_cheque_report.html#a2c59b9269dc2c52d1a6f10078cebb625",tooltip=" "];
+}

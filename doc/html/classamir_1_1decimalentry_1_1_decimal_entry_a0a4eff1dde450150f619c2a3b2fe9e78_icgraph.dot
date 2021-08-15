@@ -1,0 +1,12 @@
+digraph "amir.decimalentry.DecimalEntry.insert"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="amir.decimalentry.Decimal\lEntry.insert",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="amir.numberentry.NumberEntry.insert_cb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1numberentry_1_1_number_entry.html#a0be6ef926eb5500e1df234e825e75f4d",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="amir.decimalentry.Decimal\lEntry.insert_cb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1decimalentry_1_1_decimal_entry.html#aa41b99525517d39e988f12db4ea82273",tooltip=" "];
+}

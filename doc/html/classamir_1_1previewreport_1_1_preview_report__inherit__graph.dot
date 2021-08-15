@@ -1,0 +1,9 @@
+digraph "amir.previewreport.PreviewReport"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans.ttf",fontsize="10",labelfontname="FreeSans.ttf",labelfontsize="10"];
+  node [fontname="FreeSans.ttf",fontsize="10",shape=record];
+  Node1 [label="{amir.previewreport.Preview\lReport\n|+ content\l+ heading\l+ lines_per_page\l+ builder\l+ treeview\l+ liststore\l+ pagecount\l+ pageNumber\l+ current_page\l+ window\l+ drawfunction\l+ pages\l|+ __init__()\l+ setDrawFunction()\l+ doPreviewJob()\l+ drawPage()\l+ showPreviousPage()\l+ showNextPage()\l+ showPage()\l+ drawDefaultReport()\l+ drawDailyNotebook()\l+ drawSubjectNotebook()\l+ drawDocument()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans.ttf"];
+  Node2 [label="{amir.notebookreport.Notebook\lReport\n|+ builder\l+ window\l+ code\l+ date\l+ fdate\l+ tdate\l+ fnum\l+ tnum\l+ type\l+ subcode\l+ subname\l+ reportObj\l+ DAILY\l+ LEDGER\l+ SUBLEDGER\l|+ __init__()\l+ createReport()\l+ createPrintJob()\l+ createPreviewJob()\l+ previewReport()\l+ printReport()\l+ exportToCSV()\l+ selectSubject()\l+ subjectSelected()\l+ atdate_toggled()\l+ betweendates_toggled()\l+ betweendocs_toggled()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classamir_1_1notebookreport_1_1_notebook_report.html",tooltip=" "];
+}
