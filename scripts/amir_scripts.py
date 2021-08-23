@@ -56,13 +56,14 @@ from sqlalchemy import or_
 from amir.database import *
 import locale
 import gettext
-import gi
-gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, Gdk, GdkPixbuf, GObject
-
 import logging
 import sys
 import os
+
+import gi
+
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk, Gdk, GdkPixbuf, GObject
 
 if sys.platform == 'win32':
     # set path env to current directory to avoid GTK errors
@@ -104,7 +105,8 @@ sys.path.insert(0, os.path.dirname(fullPath))
 config = amirconfig.AmirConfig()
 share.config = config
 
-logging.debug('LANG=%s' % (config.locale))
+# remove config.locale parenthesis
+logging.debug('LANG=%s' % config.locale)
 os.environ['LANGUAGE'] = config.locale
 os.environ['LANG'] = config.locale
 if sys.platform == 'win32':
@@ -128,7 +130,8 @@ try:
 except:
     logging.error("Unable to set locale.")
 
-logging.debug('Locale Path=%s' % (config.locale_path))
+# remove config.local_path parenthesis
+logging.debug('Locale Path=%s' % config.locale_path)
 gettext.bindtextdomain('amir', config.locale_path)
 gettext.textdomain('amir')
 gettext.install('amir', config.locale_path)
@@ -171,7 +174,7 @@ class MainWindow(GObject.GObject):
         self.window.show()
         self.builder.connect_signals(self)
 
-        if config.repair_atstart == True:
+        if config.repair_atstart is True:
             msg = _("Repairing database, Please wait...")
             self.msgbox = Gtk.MessageDialog(
                 self.window, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.NONE, msg)

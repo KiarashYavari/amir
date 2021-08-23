@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a5462c-9520-4dc9-b093-bed3ae4318a7" name="Default Changelist" comment="" />
+    <list default="true" id="f9a5462c-9520-4dc9-b093-bed3ae4318a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amir/automaticaccounting.py" beforeDir="false" afterPath="$PROJECT_DIR$/amir/automaticaccounting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amir/subjects.py" beforeDir="false" afterPath="$PROJECT_DIR$/amir/subjects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amir/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/amir/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/amir_scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/amir_scripts.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,32 +42,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts/amir_scripts.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/amir/test_subjects.py" />
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
-  <component name="RunManager" selected="Python.amir_scripts">
-    <configuration name="amir_scripts" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="amir" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/amir_scripts.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test_subjects">
     <configuration name="subjects" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="amir" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,8 +68,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_subjects" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="amir" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/amir" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/amir/test_subjects.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.amir_scripts" />
+      <item itemvalue="Python.test_subjects" />
       <item itemvalue="Python.subjects" />
     </list>
   </component>
@@ -109,7 +115,10 @@
       <workItem from="1628054373235" duration="11669000" />
       <workItem from="1628486887283" duration="3160000" />
       <workItem from="1628920211379" duration="867000" />
-      <workItem from="1629005430945" duration="9169000" />
+      <workItem from="1629005430945" duration="11895000" />
+      <workItem from="1629607999197" duration="1257000" />
+      <workItem from="1629610798162" duration="3112000" />
+      <workItem from="1629695471160" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="change scripts/amir to scripts/amir_scripts.py in order to debug it">
       <created>1629017789093</created>
@@ -125,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629018132128</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create test files for weasyprintreport and subjects">
+      <created>1629029800288</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629029800288</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,14 +150,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change scripts/amir to scripts/amir_scripts.py in order to debug it" />
     <MESSAGE value="checked out files and refactor them" />
-    <option name="LAST_COMMIT_MESSAGE" value="checked out files and refactor them" />
+    <MESSAGE value="create test files for weasyprintreport and subjects" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test files for weasyprintreport and subjects" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/amir$weasyprintreport.coverage" NAME="weasyprintreport Coverage Results" MODIFIED="1628061151061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amir" />
     <SUITE FILE_PATH="coverage/amir$test_weasyprintreport.coverage" NAME="test_weasyprintreport Coverage Results" MODIFIED="1628491841401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amir" />
     <SUITE FILE_PATH="coverage/amir$amir_scripts.coverage" NAME="notebookreport Coverage Results" MODIFIED="1627454455638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amir" />
-    <SUITE FILE_PATH="coverage/amir$test_subjects.coverage" NAME="amir_scripts Coverage Results" MODIFIED="1629015840482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/amir$subjects.coverage" NAME="subjects Coverage Results" MODIFIED="1629005924422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amir" />
+    <SUITE FILE_PATH="coverage/amir$test_subjects.coverage" NAME="test_subjects Coverage Results" MODIFIED="1629611322408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amir" />
+    <SUITE FILE_PATH="coverage/amir$subjects.coverage" NAME="subjects Coverage Results" MODIFIED="1629032743870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amir" />
     <SUITE FILE_PATH="coverage/amir$amir.coverage" NAME="amir_scripts Coverage Results" MODIFIED="1627114397475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/amir$notebookreport.coverage" NAME="notebookreport Coverage Results" MODIFIED="1628061043759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amir" />
   </component>

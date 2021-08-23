@@ -1,8 +1,3 @@
-import gi
-gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
-from gi.repository import GObject
-
 from sqlalchemy.orm.util import outerjoin
 from sqlalchemy.orm.query import aliased
 from sqlalchemy.sql.functions import *
@@ -18,6 +13,11 @@ from .share import share
 from .helpers import get_builder
 from amir.share import Share
 from passlib.hash import bcrypt
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from gi.repository import GObject
 
 # config = share.config
 # Users and permissions:
@@ -103,7 +103,7 @@ class User(GObject.GObject):
                 iter = self.userTreestore.append(
                     None, (a.id, a.name, a.username, permissionName[0]))
 
-        if ledgers_only == True:
+        if ledgers_only is True:
             btn = self.builder.get_object("addsubtoolbutton")
             btn.hide()
 
@@ -231,7 +231,7 @@ class User(GObject.GObject):
     def deleteUser(self, sender):
         selection = self.userTreeview.get_selection()
         iter = selection.get_selected()[1]
-        if iter != None:
+        if iter is not None:
             Subject1 = aliased(Subject, name="s1")
             Subject2 = aliased(Subject, name="s2")
 
@@ -245,7 +245,7 @@ class User(GObject.GObject):
     def deleteGroup(self, sender):
         selection = self.groupTreeview.get_selection()
         iter = selection.get_selected()[1]
-        if iter != None:
+        if iter is not None:
             code = convertToLatin(self.groupTreestore.get(iter, 0)[0])
             row = share.config.db.session.query(Permissions).filter(
                 Permissions.id == code).first()
@@ -389,7 +389,7 @@ class User(GObject.GObject):
             return
 
         iter = selection.get_selected()[1]
-        if iter != None:
+        if iter is not None:
             if Gdk.keyval_name(event.keyval) == "Left":
                 if self.treeview.get_direction() != Gtk.TextDirection.LTR:
                     expand = 1
@@ -413,7 +413,7 @@ class User(GObject.GObject):
                     self.treeview.collapse_row(path)
                 else:
                     parent = self.treestore.iter_parent(iter)
-                    if parent != None:
+                    if parent is not None:
                         path = self.treestore.get_path(parent)
                         self.treeview.collapse_row(path)
                         self.treeview.set_cursor(path, None, False)

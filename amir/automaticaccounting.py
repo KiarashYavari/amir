@@ -1,7 +1,4 @@
-#import chequeui
-import gi
-gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
+# import chequeui
 from . import payments
 from . import class_cheque
 from . import class_document
@@ -17,7 +14,9 @@ from .database import Customers
 from .class_subject import Subjects
 from .utility import LN, convertToLatin, getFloat
 from gettext import gettext as _
-
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
 
 ## \defgroup UserInterface
 ## @{
